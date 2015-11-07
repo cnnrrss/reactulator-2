@@ -1,3 +1,4 @@
 # ignore node_modules and build folder
 node_modules/
 build/
+yarn.lock
