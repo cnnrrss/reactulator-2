@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 
 class Screen extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {input: props.input};
-    }
 
     render () {
+        let {result} = this.props;
         return (
-            <input className="display" disabled={true}/>
+            <input 
+                className="display" 
+                disabled={true}
+                value={result}
+            />
         );
     }
 }
