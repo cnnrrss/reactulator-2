@@ -24,10 +24,6 @@ body {
     border-radius: 25px;
 }
 
-.headerButtons {
-
-}
-
 .the-grid {
     display: grid;
     font-size: 2em;
@@ -40,11 +36,15 @@ body {
     transition: all 0.3s ease;
 }
 
-.gridButton {
+[class^="gridButton"] {
     font-size: .75em;
     box-sizing: border-box;
     padding: .5em;
     border-radius: .5em;
+}
+
+[class^="gridButton-="] {
+  grid-column: span 2;
 }
 
 .light {
